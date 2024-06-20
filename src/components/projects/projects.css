@@ -1,0 +1,17 @@
+.overlay{
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    transition: ease-in 0.2s;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.62);
+}
+.cards:hover .overlay{
+    opacity: 1;
+    display: flex;
+    transform: scale(1);
+    /* opacity: .6; */
+    transition: ease-in .2s;
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.twtext span {
+    font-family: monospace;
+}
+
+.name-intro-text::after{
+    content: '';
+    height: 50px;
+    width: 70px;
+    /* background-color: red; */
+    position: absolute;
+    /* border-radius: 0 12px 0 0; */
+    top: 0px;
+    right: 0px;
+    border-top: 4px double rgba(0, 0, 0, 0.71);
+    border-right: 4px double rgba(0, 0, 0, 0.716);
+}
+
+.name-intro-text::before{
+    content: '';
+    height: 50px;
+    width: 70px;
+    /* background-color: red; */
+    position: absolute;
+    /* border-radius: 0 12px 0 0; */
+    bottom: 0px;
+    left: 0px;
+    border-left: 4px double rgba(0, 0, 0, 0.71);
+    border-bottom: 4px double rgba(0, 0, 0, 0.716);
+}
+
+.name-desg-text:after{
+    content: '';
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 4px double rgba(0, 0, 0, 0.71);
+    border-right: 4px double rgba(0, 0, 0, 0.716);
+}
+.name-desg-text::before{
+    content: '';
+    height: 50px;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 4px double rgba(0, 0, 0, 0.71);
+    border-left: 4px double rgba(0, 0, 0, 0.716);
+}
+@media(max-width: 450px) {
+
+    .hero-elements-container {
+        padding: 2rem 1rem !important;
+    }
+
+}
+
+/* @media (max-width: 640px) {
+    .center-container {
+        width: 100% !important;
+    }
+}
+
+.center-container {
+    width: 25rem;
+} */
+
