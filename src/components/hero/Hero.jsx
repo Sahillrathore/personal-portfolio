@@ -105,11 +105,13 @@ const Hero = () => {
               <p className='leading-relaxed text-gray-700 z-20'>As a skilled web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects showcasing my expertise in React.js and web development.</p>
 
               <div className="hero-cta-buttons ">
-                <button className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md mr-4 relative z-30'>
+                <NavLink
+                to='contact'
+                className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md mr-4 relative z-30'>
                   Contact Me
                   <i className="fa-solid fa-up-right-from-square ml-2"></i>
-                </button>
-                <button className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md relative z-30'>Resume</button>
+                </NavLink>
+                {/* <button className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md relative z-30'>Resume</button> */}
               </div>
             </motion.div>
 

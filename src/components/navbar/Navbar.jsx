@@ -100,12 +100,12 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <div className="theme-mode-icon md:block hidden text-2xl min-w-6" >
+                    {/* <div className="theme-mode-icon md:block hidden text-2xl min-w-6" >
                     {
                         darkMode ? <i className="fa-solid fa-moon" onClick={()=>{setDarkMode(false)}} ></i>
                         : <i className="fa-regular fa-sun" onClick={()=>{setDarkMode(true)}} ></i>
                     }
-                </div>
+                    </div> */}
                 </div>
 
 
@@ -184,14 +184,17 @@ const Navbar = () => {
                         </ul>
 
                         <div className="socialandtheme mt-8 ml-2 text-xl text-zinc-800">
-                            <div className="theme-mode-icon inline-block mr-8">
+                            {/* <div className="theme-mode-icon inline-block mr-8">
                                 {
                                     darkMode ? <i className="fa-solid fa-moon" onClick={()=>{setDarkMode(false)}} ></i>
                                     : <i className="fa-regular fa-sun" onClick={()=>{setDarkMode(true)}} ></i>
                                 }
-                            </div>
+                            </div> */}
                             <a href="https://github.com/sahillrathore" target="_blank">
                                 <i className="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/sahil-rathore-666b3525a" target="_blank">
+                                <i className="fa-brands fa-linkedin-in ml-8"></i>
                             </a>
                         </div>
                     </motion.div>

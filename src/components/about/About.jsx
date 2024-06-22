@@ -40,7 +40,7 @@ const About = () => {
         {
             img: "https://i.pinimg.com/736x/d6/35/7c/d6357c8a65f8c2f3ac5c4f97eb64a147.jpg",
             title: "Frontend Developer",
-            text: "I am a Web developer with a passion for building beautiful and functional web applications.",
+            text: "As a front-end developer, I specialize in crafting engaging user experiences for web applications.",
         },
         {
             img: "https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=",
