@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import reduxLogo from '../../assets/redux-logo.png'
 import TransitionEffect from '../transitionEff/TransitionEffect';
 
 const skillsData = [
@@ -48,6 +49,17 @@ const About = () => {
             text: "As a passionate web designer, I create visually stunning, user-friendly websites that captivate users and drive business growth",
         },
     ]);
+    const [techLogo, setTechLogo] = useState([
+        {title: "React Js", img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"},
+        {title: "Redux", img: reduxLogo},
+        {title: "JavaScript", img: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"},
+        {title: "Html", img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png"},
+        {title: "Css", img: "https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"},
+        {title: "Tailwind", img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Tailwind_CSS_Logo.svg_GkNDLAs.png"},
+        {title: "Bootstrap", img: "https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/576/bootstrap-256.png"},
+        {title: "Strapi", img: "https://assets.super.so/e7c0f16c-8bd3-4c76-8075-4c86f986e1b2/uploads/favicon/9c68ae10-0a8a-4e3f-9084-3625b19df9cb.png"},
+    ])
+
     return (
         <>
             <TransitionEffect />
@@ -98,38 +110,14 @@ const About = () => {
 
                                     <div className="more-skills flex flex-wrap md:gap-12 gap-6 mt-7 text-sm">
 
-                                        <div className='text-center w-16'>
-                                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className='mb-2' />
-                                            REACT JS
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="http://localhost:5173/src/assets/redux-logo.png" className='mb-2' />
-                                            REDUX
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Tailwind_CSS_Logo.svg_GkNDLAs.png" className='mb-2' />
-                                            TAILWIND CSS
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" className='mb-2' />
-                                            JAVASCRIPT
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png" className='mb-2' />
-                                            HTML
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" className='mb-2' />
-                                            CSS
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://assets.super.so/e7c0f16c-8bd3-4c76-8075-4c86f986e1b2/uploads/favicon/9c68ae10-0a8a-4e3f-9084-3625b19df9cb.png" className='mb-2' />
-                                            STRAPI
-                                        </div>
-                                        <div className='text-center w-16'>
-                                            <img src="https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/576/bootstrap-256.png" className='mb-2' />
-                                            BOOTSTRAP
-                                        </div>
+                                        {
+                                            techLogo.map((logo) => (
+                                                <div className='text-center w-16' key={logo.title}>
+                                                    <img src={logo.img} className='mb-2' />
+                                                    <span className='uppercase'>{logo.title}</span>
+                                                </div>
+                                            ))
+                                        }
                                     </div>
                                 </div>
                             </div>

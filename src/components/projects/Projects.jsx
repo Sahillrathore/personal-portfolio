@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
 import './projects.css';
-import projImg1 from '../../assets/ecomAppSnip.png'
-import projImg2 from '../../assets/stravelImg.png'
+import projImg1 from '../../assets/astro snip.png'
+import projImg2 from '../../assets/passsnip.jpg'
+import projImg3 from '../../assets/ecomAppSnip.png'
 import { Link } from 'react-router-dom';
 import ProjectCard from '../Projectc-card-temp/ProjectCard';
 import TransitionEffect from '../transitionEff/TransitionEffect';
@@ -16,7 +17,7 @@ const Projects = () => {
       title: "E-Commerce Project",
       text: "Complete Shopping Platform",
       gitUrl: "https://github.com/Sahillrathore/react_redux_demo",
-      liveUrl: "https://stylesquare.netlify.app/",
+      liveUrl: "https://astrocart.netlify.app/",
       techStack: ["React", "Redux", "Tailwind", "Material", "UI"]
     },
     {
@@ -44,7 +45,7 @@ const Projects = () => {
             <div className="first-proj-container sm:w-5/6 w-full lg:h-96 h-fit flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
             >
 
-              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://stylesquare.netlify.app" codeLink="https://github.com/Sahillrathore/react_redux_demo" imgHeight="h-full" imgHeightCol="h-80" />
+              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://astrocart.netlify.app" codeLink="https://github.com/Sahillrathore/astrocart-ecommerce-project" imgHeight="h-full" imgHeightCol="h-80" />
             </div>
           </motion.div>
 
@@ -56,11 +57,11 @@ const Projects = () => {
           >
 
             <div className="one lg:p-6 p-4 bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
-              <ProjectCard title="S-Travel Website" desc="A travel website disign layout fully responsive" stack={["Html", "Css", "JavaScript"]} liveLink="https://s-travels.netlify.app" codeLink="https://github.com/sahillrathore/s-travel-ui" img={projImg2} imgWidth="w-full" />
+              <ProjectCard title="SecureVault" desc="Password manager web application" stack={["React", "Tailwind", "JavaScript"]} liveLink="https://manageyourpass.netlify.app" codeLink="https://github.com/Sahillrathore/password-manager" img={projImg2} imgWidth="w-full" />
             </div>
 
             <div className="two lg:p-6 p-4 bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
-              <ProjectCard title="S-Travel Website" desc="A travel website disign layout fully responsive disign layout fully responsive" stack={["Html", "Css", "JavaScript"]} liveLink="https://s-travels.netlify.app" codeLink="https://github.com/sahillrathore/s-travel-ui" img="https://wordpressboss.com/opb/vtravel-demo/assets/images/place/place3.jpg" imgWidth="w-full" />
+              <ProjectCard title="StyleSquare" desc="Online store in which products are integrated by fetching data from API's" stack={["Html", "Tailwind", "JavaScript", "React", "API"]} liveLink="https://stylesquare.netlify.app" codeLink="https://github.com/Sahillrathore/stylesquare-ecom" img={projImg3} imgWidth="w-full" />
             </div>
           </motion.div>
 

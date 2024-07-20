@@ -6,8 +6,8 @@ import footImg from '../../assets/wave.png'
 
 const socialData = [
   { profileLink: "https://github.com/sahillrathore", icon: "github", color: "zinc" },
-  { profileLink: "https://linkedin.com/in/sahil-rathore-666b3525a", icon: "linkedin-in", color: "blue" },
-  { profileLink: "sahil921031@gmail.com", icon: "google", color: "red" },
+  { profileLink: "www.linkedin.com/in/sahil-rathore-3b2786318", icon: "linkedin-in", color: "blue" },
+  // { profileLink: "sahil921031@gmail.com", icon: "google", color: "red" },
 ]
 const textClass = ["bg-blue-700", "bg-zinc-700", "bg-red-700"]
 const Footer = () => {
@@ -45,28 +45,28 @@ const Footer = () => {
 
         <div className="footer-links flex lg:flex-row sm:flex-col flex-row items-center gap-4">
           <NavLink
-            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-800"}
+            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-950"}
             to='/'
           >
             Home
           </NavLink>
 
           <NavLink
-            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-800"}
+            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-950"}
             to='about'
           >
             About
           </NavLink>
 
           <NavLink
-            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-800"}
+            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-950"}
             to='projects'
           >
             Projects
           </NavLink>
 
           <NavLink
-            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-800"}
+            className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-950"}
             to='contact'
           >
             Contact

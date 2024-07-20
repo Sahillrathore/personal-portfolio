@@ -10,13 +10,13 @@ const Contact = () => {
     const [result, setResult] = useState("");
     
     useEffect(() => {
-        window.scroll(9, 0);
+        window.scroll(0, 0);
     }, []);
 
     const onSubmit = async (e) => {
         e.preventDefault();
         setResult("Sending....");
-        const formData = new FormData(event.target);
+        const formData = new FormData(e.target);
 
         formData.append("access_key", "3201b543-5c29-4336-8cef-6972717e06c3");
 
@@ -29,6 +29,8 @@ const Contact = () => {
 
         if (data.success) {
             setResult("Form Submitted Successfully");
+            notify()
+
             e.target.reset();
         } else {
             console.log("Error", data);
@@ -36,7 +38,7 @@ const Contact = () => {
         }
     }
 
-    const notify = () => toast(result);
+    const notify = () => toast("Form Submitted Successfully");
 
     return (
         <>
@@ -97,7 +99,7 @@ const Contact = () => {
                                     defaultValue={""}
                                 />
                             </div>
-                            <button type='submit' className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={notify}>
+                            <button type='submit' className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                                 Send
                             </button>
 
