@@ -64,7 +64,7 @@ const About = () => {
         <>
             <TransitionEffect />
             <div className="about-section">
-                <div className="about-elements-container pt-12 bg-zinc-200 flex lg:flex-row flex-col w-full justify-around lg:mb-32 sm:mb-64 mb-64 z-30 relative">
+                <div className="about-elements-container pt-12 bg-zinc-200 flex lg:flex-row flex-col w-full justify-around lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative">
 
                     <div className='lg:w w-full flex flex-col'>
                         <motion.div

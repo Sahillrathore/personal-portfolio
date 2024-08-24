@@ -34,7 +34,7 @@ const Projects = () => {
     <>
       <TransitionEffect />
       <div className="projets-section" id='projects'>
-        <div className="projects-elements-container bg-gray-200 py-12 px-6 flex flex-col items-center lg:mb-32 sm:mb-64 mb-64 z-30 relative">
+        <div className="projects-elements-container bg-gray-200 py-12 px-6 flex flex-col items-center lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative">
           <motion.div
             whileInView={{ opacity: [0, 1], y: [60, 0] }}
             transition={{ duration: 1 }}

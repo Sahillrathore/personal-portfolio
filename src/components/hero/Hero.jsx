@@ -23,9 +23,9 @@ const Hero = () => {
 
   return (
     <>
-      <TransitionEffect/>
+      <TransitionEffect />
       <div className="hero-section">
-        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-12 py-16 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center lg:mb-32 sm:mb-64 mb-64 z-30 relative" style={{ minHeight: "91vh" }}>
+        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-12 py-16 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative" style={{ minHeight: "91vh" }}>
 
           <div className="left-container">
 
@@ -42,8 +42,8 @@ const Hero = () => {
                   <span className='font-bold text-4xl text-zinc-800 tracking-wider'>Sahil</span>
                 </div>
 
-                
-                <svg className='absolute md:top-8 sm:-top-12 top-8 md:h-full sm:h-60 h-full' id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stopColor="rgba(248, 117, 55, 1)" offset="0%"></stop>                            <stop id="stop2" stopColor="rgba(251, 168, 31, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M16.8,-26.1C19.6,-21.1,18.3,-13.3,20.6,-6.6C23,0.1,29,5.8,28,9.2C27.1,12.6,19,13.9,13.2,13.6C7.3,13.2,3.7,11.3,-1.7,13.7C-7.1,16,-14.2,22.7,-19.2,22.7C-24.3,22.8,-27.3,16.3,-27.9,10.1C-28.5,3.9,-26.6,-2.1,-24.3,-7.5C-22,-13,-19.3,-17.9,-15.2,-22.5C-11,-27.1,-5.5,-31.5,0.7,-32.5C7,-33.5,14,-31.2,16.8,-26.1Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{transition: "all 0.3s ease 0s"}}></path>
+
+                <svg className='absolute md:top-8 sm:-top-12 top-8 md:h-full sm:h-60 h-full' id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stopColor="rgba(248, 117, 55, 1)" offset="0%"></stop>                            <stop id="stop2" stopColor="rgba(251, 168, 31, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M16.8,-26.1C19.6,-21.1,18.3,-13.3,20.6,-6.6C23,0.1,29,5.8,28,9.2C27.1,12.6,19,13.9,13.2,13.6C7.3,13.2,3.7,11.3,-1.7,13.7C-7.1,16,-14.2,22.7,-19.2,22.7C-24.3,22.8,-27.3,16.3,-27.9,10.1C-28.5,3.9,-26.6,-2.1,-24.3,-7.5C-22,-13,-19.3,-17.9,-15.2,-22.5C-11,-27.1,-5.5,-31.5,0.7,-32.5C7,-33.5,14,-31.2,16.8,-26.1Z" width="100%" height="100%" transform="translate(50 50)" strokeWidth="0" style={{ transition: "all 0.3s ease 0s" }}></path>
                 </svg>
 
                 <div className="name-desg-text overflow-hidden flex-col flex backdrop-blur-sm bg-zinc-50/50 relative z-40 bg-zinc-50 md:w-60 w-52 p-4 py-6 justify-center text-start rounded-xl shadow-slate-400/60 shadow-lg text-sm uppercase " >
@@ -94,7 +94,7 @@ const Hero = () => {
               className='flex flex-col gap-8 center-container'
             >
               <h1 className='lg:text-6xl sm:text-5xl text-3xl font-bold text-zinc-800 z-20'>
-                <span className='' style={{lineHeight: "1.15"}}>Turning Vision Into Reality With </span>
+                <span className='' style={{ lineHeight: "1.15" }}>Turning Vision Into Reality With </span>
                 <span className='text-indigo-600'>Code </span> And {' '}
                 <span className='text-indigo-600 '>
                   Design
@@ -106,8 +106,8 @@ const Hero = () => {
 
               <div className="hero-cta-buttons ">
                 <NavLink
-                to='contact'
-                className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md mr-4 relative z-30'>
+                  to='contact'
+                  className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md mr-4 relative z-30'>
                   Contact Me
                   <i className="fa-solid fa-up-right-from-square ml-2"></i>
                 </NavLink>
@@ -125,11 +125,11 @@ const Hero = () => {
 
           </div>
 
-          
+
 
           <div className="next-page-btn text-4xl text-green-600 sm:absolute sm:block hidden top-2/4 right-5">
             <NavLink
-            to='about'
+              to='about'
             >
               <i className="fa-solid fa-angles-right"></i>
             </NavLink>
