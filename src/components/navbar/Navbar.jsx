@@ -193,7 +193,7 @@ const Navbar = () => {
                             <a href="https://github.com/sahillrathore" target="_blank">
                                 <i className="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://linkedin.com/in/sahil-rathore-666b3525a" target="_blank">
+                                <a href="https://www.linkedin.com/in/sahil-rathore123" target="_blank">
                                 <i className="fa-brands fa-linkedin-in ml-8"></i>
                             </a>
                         </div>

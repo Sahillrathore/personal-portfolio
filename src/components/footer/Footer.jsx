@@ -6,7 +6,7 @@ import footImg from '../../assets/wave.png'
 
 const socialData = [
   { profileLink: "https://github.com/sahillrathore", icon: "github", color: "zinc" },
-  { profileLink: "www.linkedin.com/in/sahil-rathore-3b2786318", icon: "linkedin-in", color: "blue" },
+  { profileLink: "https://www.linkedin.com/in/sahil-rathore123", icon: "linkedin-in", color: "blue" },
   // { profileLink: "sahil921031@gmail.com", icon: "google", color: "red" },
 ]
 const textClass = ["bg-blue-700", "bg-zinc-700", "bg-red-700"]

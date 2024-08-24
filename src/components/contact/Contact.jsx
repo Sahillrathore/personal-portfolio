@@ -45,7 +45,7 @@ const Contact = () => {
             <TransitionEffect />
             <ToastContainer/>
             <div className="hero-section">
-                <div className="hero-elements-container bg-gray-200 flex flex-col w-full sm:px-20 px-12 py-16 pt-14 justify-center overflow-hidden items-center lg:mb-32 sm:mb-64 mb-64 z-30 relative" style={{ minHeight: "91vh" }}>
+                <div className="hero-elements-container bg-gray-200 flex flex-col w-full sm:px-20 px-12 py-16 pt-14 justify-center overflow-hidden items-center lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative" style={{ minHeight: "91vh" }}>
                     <div className="contact-title sm:text-4xl text-2xl text-zinc-800 font-bold text-center mb-10">
                         <h2><span className='text-indigo-600'>Reach</span> Out To Me</h2>
                     </div>
