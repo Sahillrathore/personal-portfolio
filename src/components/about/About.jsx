@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import reduxLogo from '../../assets/redux-logo.png'
 import TransitionEffect from '../transitionEff/TransitionEffect';
-import './about.css'
 
 const skillsData = [
     {
@@ -50,7 +49,7 @@ const About = () => {
             text: "As a passionate web designer, I create visually stunning, user-friendly websites that captivate users and drive business growth",
         },
     ]);
-    const [techLogo, setTechLogo] = useState([
+    const [images, setImages] = useState([
         {title: "React Js", img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"},
         {title: "Redux", img: reduxLogo},
         {title: "JavaScript", img: "https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png"},
@@ -110,7 +109,7 @@ const About = () => {
 
                                     <div className="more-skills flex flex-wrap md:gap-12 gap-6 mt-7 text-sm">
 
-                                        <ContinuousSlider techLogo={techLogo}/>
+                                        <FramerMotionSlider images={images}/>
                                     </div>
                                 </div>
                             </div>
@@ -126,24 +125,35 @@ const About = () => {
 export default About
 
 
-const ContinuousSlider = ({techLogo} ) => {
-    
+const FramerMotionSlider = ({ images }) => {
+    const slideWidth = 100 / images.length;
+
     return (
-        <div className="slider-container w-[80%] mx-auto">
-            <div className="slider-track flex gap-8">
-                {techLogo?.map((image, index) => (
-                    <div className="slide" key={index}>
-                        <img src={image.img} alt={`Slide ${index}`} className='h-20 w-20' />
+        <div className="w-full overflow-hidden">
+            <motion.div
+                className="flex gap-8"
+                initial={{ x: 0 }}
+                animate={{ x: `-${100}%` }}
+                transition={{
+                    repeat: Infinity,
+                    duration: 12, // Total duration for one loop
+                    ease: 'linear',
+                }}
+            >
+                {images.map((image, index) => (
+                    <div className="flex-shrink-0 w-fit flex flex-col items-center" style={{ width: `${slideWidth}%` }} key={index}>
+                        <img className=" rounded-lg h-20 w-20" src={image.img} alt={`Slide ${index}`} />
+                        <p className='text-center'>{image.title}</p>
                     </div>
                 ))}
-                {/* Duplicate the slides to create an infinite loop effect */}
-                {techLogo.map((image, index) => (
-                    <div className="slide" key={index + techLogo.length}>
-                        <img src={image.img} alt={`Slide ${index}`} className='h-20 w-20' />
+                {/* Duplicate the slides for continuous effect */}
+                {images.map((image, index) => (
+                    <div className="flex-shrink-0 w-fit flex flex-col items-center" style={{ width: `${slideWidth}%` }} key={index + images.length}>
+                        <img className=" rounded-lg h-20 w-20" src={image.img} alt={`Slide ${index}`} />
+                        <p className='text-center'>{image.title}</p>
                     </div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 };
-
