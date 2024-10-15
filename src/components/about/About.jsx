@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import reduxLogo from '../../assets/redux-logo.png'
 import TransitionEffect from '../transitionEff/TransitionEffect';
+import './about.css'
 
 const skillsData = [
     {
@@ -58,6 +59,7 @@ const About = () => {
         {title: "Tailwind", img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Tailwind_CSS_Logo.svg_GkNDLAs.png"},
         {title: "Bootstrap", img: "https://cdn0.iconfinder.com/data/icons/font-awesome-brands-vol-1/576/bootstrap-256.png"},
         {title: "Strapi", img: "https://assets.super.so/e7c0f16c-8bd3-4c76-8075-4c86f986e1b2/uploads/favicon/9c68ae10-0a8a-4e3f-9084-3625b19df9cb.png"},
+        { title: "Firebase", img: "359956.png"},
     ])
 
     return (
@@ -100,32 +102,20 @@ const About = () => {
                             </div>
                         </motion.div>
 
-                        <div className="skills-section">
+                        <div className="skills-section my-8">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fillOpacity="0.7" d="M0,32L30,37.3C60,43,120,53,180,85.3C240,117,300,171,360,181.3C420,192,480,160,540,154.7C600,149,660,171,720,165.3C780,160,840,128,900,106.7C960,85,1020,75,1080,90.7C1140,107,1200,149,1260,176C1320,203,1380,213,1410,218.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-                            </svg>
-
-                            <div className='' style={{ backgroundColor: "#f7da3f" }}>
-                                <div className='sm:px-16 px-6 pb-12 md:relative md:-top-20' style={{ backgroundColor: "#f7da3f" }}>
+                            <div className='' >
+                                <div className='' >
                                     <h1 className='text-zinc-800 md:text-5xl text-3xl font-bold mb-8'>Skills</h1>
 
                                     <div className="more-skills flex flex-wrap md:gap-12 gap-6 mt-7 text-sm">
 
-                                        {
-                                            techLogo.map((logo) => (
-                                                <div className='text-center w-16' key={logo.title}>
-                                                    <img src={logo.img} className='mb-2' />
-                                                    <span className='uppercase'>{logo.title}</span>
-                                                </div>
-                                            ))
-                                        }
+                                        <ContinuousSlider techLogo={techLogo}/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
 
                 </div>
             </div>
@@ -134,3 +124,26 @@ const About = () => {
 }
 
 export default About
+
+
+const ContinuousSlider = ({techLogo} ) => {
+    
+    return (
+        <div className="slider-container w-[80%] mx-auto">
+            <div className="slider-track flex gap-8">
+                {techLogo?.map((image, index) => (
+                    <div className="slide" key={index}>
+                        <img src={image.img} alt={`Slide ${index}`} className='h-20 w-20' />
+                    </div>
+                ))}
+                {/* Duplicate the slides to create an infinite loop effect */}
+                {techLogo.map((image, index) => (
+                    <div className="slide" key={index + techLogo.length}>
+                        <img src={image.img} alt={`Slide ${index}`} className='h-20 w-20' />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+

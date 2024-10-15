@@ -1,0 +1,38 @@
+.slider-container {
+    width: 100%;
+    /* Full width of the visible slider */
+    overflow: hidden;
+    /* Hide overflowing content */
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(200%);
+    /* Double the width for seamless looping */
+    animation: slide 7s linear infinite;
+    /* Continuous animation */
+}
+
+.slide {
+    min-width: fit-content;
+    /* Each slide takes full width */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Continuous smooth sliding without jumps */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Move the entire track by 50% (half of its width) */
+    }
+}
