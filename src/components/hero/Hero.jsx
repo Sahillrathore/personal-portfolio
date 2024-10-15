@@ -25,7 +25,7 @@ const Hero = () => {
     <>
       <TransitionEffect />
       <div className="hero-section">
-        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-12 py-16 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative" style={{ minHeight: "91vh" }}>
+        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-12 py-10 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center z-30 relative" style={{ minHeight: "91vh" }}>
 
           <div className="left-container">
 

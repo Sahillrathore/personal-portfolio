@@ -64,14 +64,15 @@ const About = () => {
         <>
             <TransitionEffect />
             <div className="about-section">
-                <div className="about-elements-container pt-12 bg-zinc-200 flex lg:flex-row flex-col w-full justify-around lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative">
+                <div className="about-elements-container pt-8 bg-gray-200 flex lg:flex-row flex-col w-full justify-around z-30 relative">
 
-                    <div className='lg:w w-full flex flex-col'>
+                    <div className='lg:w w-full flex flex-col px-16'>
                         <motion.div
                             whileInView={{ opacity: [0, 1], y: [80, 0] }}
                             transition={{ duration: 1 }}
+                            className='flex justify-between items-center'
                         >
-                            <div className="about-text mb-8 sm:px-16 px-6">
+                            <div className="about-text mb-8  px-6 w-1/2">
                                 <h1 className='about-heading md:text-5xl text-3xl font-bold text-zinc-800 mb-8'>About <span className='text-indigo-600'>Me</span></h1>
                                 <p className='text-zinc-600 mb-6'>
                                     Hello! I'm Sahil Rathore, a passionate web developer with a strong foundation in modern web technologies. I specialize in creating dynamic, responsive, and user-friendly websites and applications using a variety of tools and frameworks.
@@ -81,9 +82,9 @@ const About = () => {
                                 </p>
                             </div>
 
-                            <div className="service-cards pt-8">
+                            <div className="service-cards pt-8 w-fit bg-">
 
-                                <div className="info-cards flex flex-wrap justify-center gap-14 sm:px-16 px-6">
+                                <div className="info-cards w-fit flex flex-wrap justify-center gap-14 px-6">
                                     {
                                         cardData.map((item, i) => (
                                             <div className="cards w-52 hover:scale-110 transition duration-500" key={i}>
