@@ -34,18 +34,18 @@ const Projects = () => {
     <>
       <TransitionEffect />
       <div className="projets-section" id='projects'>
-        <div className="projects-elements-container bg-gray-200 py-12 px-6 flex flex-col items-center lg:mb-32 md:mb-52 sm:mb-52 mb-52 z-30 relative">
+        <div className="projects-elements-container bg-gray-200 py-2 sm:px-16 px-6 flex flex-col items-center  z-30 relative">
           <motion.div
             whileInView={{ opacity: [0, 1], y: [60, 0] }}
             transition={{ duration: 1 }}
             className='flex flex-col items-center'
           >
-            <h1 className='sm:text-5xl text-4xl mt-2 font-bold mb-10 text-zinc-800'>What I've <span className='text-indigo-600'>Built</span></h1>
+            <h1 className='sm:text-5xl text-4xl mt-2 mb-6 font-bold text-start w-full text-zinc-800'>What I've <span className='text-indigo-600'>Built</span></h1>
 
-            <div className="first-proj-container sm:w-5/6 w-full lg:h-96 h-fit flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
+            <div className="first-proj-container sm:w-5/6 w-full lg:h-96 h-full flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
             >
 
-              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://astrocart.netlify.app" codeLink="https://github.com/Sahillrathore/astrocart-ecommerce-project" imgHeight="h-full" imgHeightCol="h-80" />
+              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://astrocart.netlify.app" codeLink="https://github.com/Sahillrathore/astrocart-ecommerce-project" />
             </div>
           </motion.div>
 
@@ -53,7 +53,7 @@ const Projects = () => {
             whileInView={{ opacity: [0, 1], y: [80, 0] }}
             transition={{ duration: 1 }}
 
-            className="second-proj-container sm:w-5/6 w-full mt-14 flex md:flex-nowrap flex-wrap justify-between lg:gap-16 gap-10"
+            className="second-proj-container sm:w-5/6 w-full mt-4 flex md:flex-nowrap flex-wrap justify-between lg:gap-16 gap-4"
           >
 
             <div className="one lg:p-6 p-4 bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">

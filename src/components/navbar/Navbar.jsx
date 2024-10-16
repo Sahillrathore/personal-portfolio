@@ -52,23 +52,21 @@ const Navbar = () => {
                 <div className="nav-links md:flex items-center gap-8 hidden">
                     <ul className='flex gap-8'>
                         <li>
-                            <NavLink
-                                to='/'
+                            <a href='#home'
                                 className={({ isActive }) => `${isActive ? "text-purple-600 border-b border-b-black" : "text-zinc-700 dark:text-zinc-300"}  hover:text-purple-700 uppercase text-md pb-[5px]`}
                             >
                                 <i className="fa-solid fa-angle-left text-sm text-indigo-600"></i>Home<i className="fa-solid fa-angle-right text-sm text-indigo-600"></i>
-                            </NavLink>
+                            </a>
                         </li>
 
                         <li>
-                            <NavLink
-                                to='about'
+                            <a href='#about'
                                 className={({ isActive }) => `${isActive ? "text-purple-600 border-b border-b-black" : "text-zinc-700 dark:text-zinc-300"}  hover:text-purple-700 uppercase text-md pb-[5px]`}
                             >
                                <i className="fa-solid fa-angle-left text-sm text-indigo-600"></i>
                                About
                                <i className="fa-solid fa-angle-right text-sm text-indigo-600"></i>
-                            </NavLink>
+                            </a >
                         </li>
 
                         {/* <li>
@@ -80,23 +78,23 @@ const Navbar = () => {
                             </NavLink>
                         </li> */}
                         <li>
-                            <NavLink
-                                to="projects"
+                            <a
+                                href='#projects'
                                 className={({ isActive }) => `${isActive ? "text-purple-600 border-b border-b-black" : "text-zinc-700 dark:text-zinc-300"}  hover:text-purple-700 uppercase text-md pb-[5px]`}
                             >
                                 <i className="fa-solid fa-angle-left text-sm text-indigo-600"></i>Projects<i className="fa-solid fa-angle-right text-sm text-indigo-600"></i>
-                            </NavLink>
+                            </a>
                         </li>
 
                         <li>
-                            <NavLink
-                                to="contact"
+                            <a
+                                href='#contact'
                                 className={({ isActive }) => `${isActive ? "text-purple-600 border-b border-b-black" : "text-zinc-700 dark:text-zinc-300"}  hover:text-purple-700 uppercase text-md pb-[5px]`}
                             >
                                 <i className="fa-solid fa-angle-left text-sm text-indigo-600"></i>
                                 Contact
                                 <i className="fa-solid fa-angle-right text-sm text-indigo-600"></i>
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
 

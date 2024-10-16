@@ -3,18 +3,18 @@ import React from 'react'
 // import projImg1 from '../../assets/ecomAppSnip.png'
 // import projImg2 from '../../assets/stravelImg.png'
 
-const ProjectCard = ({ title, img, stack, liveLink, codeLink, desc, imgHeight, imgWidth = 'w-1/2', imgHeightCol}) => {
+const ProjectCard = ({ title, img, stack, liveLink, codeLink, desc, imgWidth = 'w-1/2'}) => {
   return (
 
     // <div className='card p-4 bg-white h-full'>
     <>
-      <div className={`card-img lg:${imgHeight} sm:${imgHeightCol} lg:${imgWidth} w-full overflow-hidden rounded-2xl transition-transform`}>
+      <div className={`card-img lg:${imgWidth} h-fit w-full overflow-hidden rounded-2xl transition-transform`}>
         <a href={liveLink} target='_blank'>
-          <img src={img} alt="proimg" className='h-full w-full rounded-2xl hover:scale-105 transition-transform' />
+          <img src={img} alt="proimg" className=' w-full rounded-2xl hover:scale-105 transition-transform h-80' />
         </a>
       </div>
 
-      <div className={`card-text flex flex-col lg:gap-3 gap-2 lg:${imgWidth} w-full mt-2`}>
+      <div className={`card-text flex flex-col lg:gap-3 gap-2 lg:${imgWidth} w-full mt-2 `}>
         <span className='flex flex-wrap gap-2'>
           {stack?.map((item)=> (
             <span key={item} className='tech-stack bg-purple-600 px-3 rounded-xl text-white font-light sm:text-base text-sm'>{item}</span>

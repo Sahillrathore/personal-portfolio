@@ -13,7 +13,7 @@ const textClass = ["bg-blue-700", "bg-zinc-700", "bg-red-700"]
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-elements-container  sm:pb-7 pb-11 sm:px-20 px-10 py-7 bg-indigo-100 flex sm:flex-row flex-col sm:gap-6 gap-12 items-center justify-between fixed bottom-0 w-full z-10 lg:bg-repeat bg-no-repeat"
+      <div className="footer-elements-container  sm:pb-7 pb-11 sm:px-20 px-10 py-7 bg-indigo-100 flex sm:flex-row flex-col sm:gap-6 gap-12 items-center justify-between w-full z-10 lg:bg-repeat bg-no-repeat"
       style={{backgroundImage: `url(${footImg})`, backgroundPosition: "bottom", }}
       >
         <div className="footer-social">
@@ -33,7 +33,7 @@ const Footer = () => {
 
           </div>
         </div>
-
+{/* 
         <div className="hire-me-button border-t-red-400 rounded-full p-4 relative sm:block hidden ">
 
 
@@ -41,9 +41,9 @@ const Footer = () => {
             <NavLink to='contact' className='rounded-full text-sm bg-black text-white p-[10px] py-6 z-50'>Hire Me</NavLink>
           </div>
 
-        </div>
+        </div> */}
 
-        <div className="footer-links flex lg:flex-row sm:flex-col flex-row items-center gap-4">
+        {/* <div className="footer-links flex lg:flex-row sm:flex-col flex-row items-center gap-4">
           <NavLink
             className={({ isActive }) => isActive ? "text-purple-600" : "text-zinc-950"}
             to='/'
@@ -71,7 +71,7 @@ const Footer = () => {
           >
             Contact
           </NavLink>
-        </div>
+        </div> */}
       </div>
     </footer>
   )

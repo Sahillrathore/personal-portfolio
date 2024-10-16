@@ -64,16 +64,16 @@ const About = () => {
     return (
         <>
             <TransitionEffect />
-            <div className="about-section">
+            <div className="about-section" id='about'>
                 <div className="about-elements-container pt-8 bg-gray-200 flex lg:flex-row flex-col w-full justify-around z-30 relative">
 
-                    <div className='lg:w w-full flex flex-col px-16'>
+                    <div className='lg:w w-full flex flex-col sm:px-16 px-2'>
                         <motion.div
                             whileInView={{ opacity: [0, 1], y: [80, 0] }}
                             transition={{ duration: 1 }}
-                            className='flex justify-between items-center'
+                            className='flex sm:flex-row flex-col justify-between items-center'
                         >
-                            <div className="about-text mb-8  px-6 w-1/2">
+                            <div className="about-text mb-8  px-6 sm:w-1/2 w-full">
                                 <h1 className='about-heading md:text-5xl text-3xl font-bold text-zinc-800 mb-8'>About <span className='text-indigo-600'>Me</span></h1>
                                 <p className='text-zinc-600 mb-6'>
                                     Hello! I'm Sahil Rathore, a passionate web developer with a strong foundation in modern web technologies. I specialize in creating dynamic, responsive, and user-friendly websites and applications using a variety of tools and frameworks.
@@ -83,9 +83,9 @@ const About = () => {
                                 </p>
                             </div>
 
-                            <div className="service-cards pt-8 w-fit bg-">
+                            <div className="service-cards pt-2 sm:w-fit w-full bg-">
 
-                                <div className="info-cards w-fit flex flex-wrap justify-center gap-14 px-6">
+                                <div className="info-cards sm:w-fit w-full flex flex-wrap justify-center sm:gap-14 gap-4 px-6">
                                     {
                                         cardData.map((item, i) => (
                                             <div className="cards w-52 hover:scale-110 transition duration-500" key={i}>
@@ -101,7 +101,7 @@ const About = () => {
                             </div>
                         </motion.div>
 
-                        <div className="skills-section my-8">
+                        <div className="skills-section my-4 mt-8 px-6">
 
                             <div className='' >
                                 <div className='' >
@@ -131,7 +131,7 @@ const FramerMotionSlider = ({ images }) => {
     return (
         <div className="w-full overflow-hidden">
             <motion.div
-                className="flex gap-8"
+                className="flex gap-8 h-fit"
                 initial={{ x: 0 }}
                 animate={{ x: `-${100}%` }}
                 transition={{
@@ -141,15 +141,15 @@ const FramerMotionSlider = ({ images }) => {
                 }}
             >
                 {images.map((image, index) => (
-                    <div className="flex-shrink-0 w-fit flex flex-col items-center" style={{ width: `${slideWidth}%` }} key={index}>
-                        <img className=" rounded-lg h-20 w-20" src={image.img} alt={`Slide ${index}`} />
-                        <p className='text-center'>{image.title}</p>
+                    <div className="flex-shrink-0 w-fit flex flex-col h-fit items-center" style={{ width: `${slideWidth}%` }} key={index}>
+                        <img className=" rounded-lg sm:h-20 sm:w-20 w-20" src={image.img} alt={`Slide ${index}`} />
+                        <p className='text-center sm:block hidden'>{image.title}</p>
                     </div>
                 ))}
                 {/* Duplicate the slides for continuous effect */}
                 {images.map((image, index) => (
-                    <div className="flex-shrink-0 w-fit flex flex-col items-center" style={{ width: `${slideWidth}%` }} key={index + images.length}>
-                        <img className=" rounded-lg h-20 w-20" src={image.img} alt={`Slide ${index}`} />
+                    <div className="flex-shrink-0 w-fit flex h-fit flex-col items-center" style={{ width: `${slideWidth}%` }} key={index + images.length}>
+                        <img className=" rounded-lg sm:h-20 sm:w-20" src={image.img} alt={`Slide ${index}`} />
                         <p className='text-center'>{image.title}</p>
                     </div>
                 ))}

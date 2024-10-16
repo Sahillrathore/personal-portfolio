@@ -24,8 +24,8 @@ const Hero = () => {
   return (
     <>
       <TransitionEffect />
-      <div className="hero-section">
-        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-12 py-10 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center z-30 relative" style={{ minHeight: "91vh" }}>
+      <div className="hero-section" id='home'>
+        <div className="hero-elements-container bg-gray-200 flex md:flex-row flex-col w-full sm:px-20 px-8 py-10 pt-14 justify-center lg:gap-32 gap-12 overflow-hidden items-center z-30 relative" style={{ minHeight: "91vh" }}>
 
           <div className="left-container">
 
@@ -105,12 +105,12 @@ const Hero = () => {
               <p className='leading-relaxed text-gray-700 z-20'>As a skilled web developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects showcasing my expertise in React.js and web development.</p>
 
               <div className="hero-cta-buttons ">
-                <NavLink
-                  to='contact'
+                <a
+                  href='#contact'
                   className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md mr-4 relative z-30'>
                   Contact Me
                   <i className="fa-solid fa-up-right-from-square ml-2"></i>
-                </NavLink>
+                </a>
                 {/* <button className='px-4 py-2 transition-colors bg-indigo-500 text-zinc-50 rounded-md relative z-30'>Resume</button> */}
               </div>
             </motion.div>

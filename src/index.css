@@ -6,6 +6,10 @@
     font-family: 'Poppins';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::selection {
     /* color: rgba(78, 194, 248, 0.87); */
     background-color: rgb(255, 182, 46);
