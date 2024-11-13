@@ -128,11 +128,7 @@ const Hero = () => {
 
 
           <div className="next-page-btn text-4xl text-green-600 sm:absolute sm:block hidden top-2/4 right-5">
-            <NavLink
-              to='about'
-            >
-              <i className="fa-solid fa-angles-right"></i>
-            </NavLink>
+            <i className="fa-solid fa-angles-right"></i>
           </div>
 
         </div>
