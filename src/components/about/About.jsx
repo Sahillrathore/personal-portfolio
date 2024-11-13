@@ -100,20 +100,6 @@ const About = () => {
                                 </div>
                             </div>
                         </motion.div>
-
-                        <div className="skills-section my-4 mt-8 px-6">
-
-                            <div className='' >
-                                <div className='' >
-                                    <h1 className='text-zinc-800 md:text-5xl text-3xl font-bold mb-8'>Skills</h1>
-
-                                    <div className="more-skills flex flex-wrap md:gap-12 gap-6 mt-7 text-sm">
-
-                                        <FramerMotionSlider images={images}/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
@@ -123,37 +109,3 @@ const About = () => {
 }
 
 export default About
-
-
-const FramerMotionSlider = ({ images }) => {
-    const slideWidth = 100 / images.length;
-
-    return (
-        <div className="w-full overflow-hidden">
-            <motion.div
-                className="flex gap-8 h-fit"
-                initial={{ x: 0 }}
-                animate={{ x: `-${100}%` }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 12, // Total duration for one loop
-                    ease: 'linear',
-                }}
-            >
-                {images.map((image, index) => (
-                    <div className="flex-shrink-0 w-fit flex flex-col h-fit items-center" style={{ width: `${slideWidth}%` }} key={index}>
-                        <img className=" rounded-lg sm:h-20 sm:w-20 w-20" src={image.img} alt={`Slide ${index}`} />
-                        <p className='text-center sm:block hidden'>{image.title}</p>
-                    </div>
-                ))}
-                {/* Duplicate the slides for continuous effect */}
-                {images.map((image, index) => (
-                    <div className="flex-shrink-0 w-fit flex h-fit flex-col items-center" style={{ width: `${slideWidth}%` }} key={index + images.length}>
-                        <img className=" rounded-lg sm:h-20 sm:w-20" src={image.img} alt={`Slide ${index}`} />
-                        <p className='text-center'>{image.title}</p>
-                    </div>
-                ))}
-            </motion.div>
-        </div>
-    );
-};

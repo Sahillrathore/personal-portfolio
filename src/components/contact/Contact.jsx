@@ -44,8 +44,8 @@ const Contact = () => {
         <>
             <TransitionEffect />
             <ToastContainer/>
-            <div className="contact-section" id='contact'>
-                <div className="hero-elements-container bg-gray-200 flex flex-col w-full sm:px-16 px-6  py-8 pt-14  overflow-hidden items-center z-30 relative" >
+            <div className="contact-section bg-gray-200" id='contact'>
+                <div className="hero-elements-container flex flex-col w-full sm:px-16 px-6  py-8 pt-14  overflow-hidden items-center z-30 relative" >
                     <div className="contact-title sm:text-4xl text-2xl text-zinc-800 font-bold text-center mb-10">
                         <h2><span className='text-indigo-600'>Reach</span> Out To Me</h2>
                     </div>

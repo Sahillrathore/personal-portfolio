@@ -34,7 +34,7 @@ const Projects = () => {
     <>
       <TransitionEffect />
       <div className="projets-section" id='projects'>
-        <div className="projects-elements-container pt-4 bg-gray-200 py-2 sm:px-16 px-6 flex flex-col items-center  z-30 relative">
+        <div className="projects-elements-container pt-4 bg-gray-200 py-2 sm:px-16 px-6 flex flex-col items- z-30 relative">
           <motion.div
             whileInView={{ opacity: [0, 1], y: [60, 0] }}
             transition={{ duration: 1 }}
@@ -42,26 +42,36 @@ const Projects = () => {
           >
             <h1 className='sm:text-5xl ml-6 text-4xl mt-2 mb-6 font-bold text-start w-full text-zinc-800'>What I've <span className='text-indigo-600'>Built</span></h1>
 
-            <div className="first-proj-container sm:w-5/6 w-full lg:h-96 h-full flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
+            {/* <div className="first-proj-container sm:w-5/6 mx-auto w-full lg:h-96 h-full flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
             >
 
-              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://astrocart.netlify.app" codeLink="https://github.com/Sahillrathore/astrocart-ecommerce-project" />
-            </div>
+              
+            </div> */}
           </motion.div>
 
           <motion.div
             whileInView={{ opacity: [0, 1], y: [80, 0] }}
             transition={{ duration: 1 }}
 
-            className="second-proj-container sm:w-5/6 w-full mt-4 flex md:flex-nowrap flex-wrap justify-between lg:gap-16 gap-4"
+            className="second-proj-container w-full mt-4 flex flex-wrap items-center justify-start lg:gap-8 gap-4"
           >
+            {/* <div className="one lg:p-3 p-3 max-w-[22rem] h-fit bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
+              
+            </div> */}
 
-            <div className="one lg:p-6 p-4 bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
-              <ProjectCard title="SecureVault" desc="Password manager web application" stack={["React", "Tailwind", "JavaScript"]} liveLink="https://manageyourpass.netlify.app" codeLink="https://github.com/Sahillrathore/password-manager" img={projImg2} imgWidth="w-full" />
+            <div className="one lg:p-3 p-3 max-w-[22rem] h-fit bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
+              <ProjectCard title="E-commerce Application" desc="A Complete Ecommerce shopping app made with react and redux state management library for cart components functionality" img={projImg1} stack={["React", "Redux", "Tailwind", "Mui"]} liveLink="https://astrocart.netlify.app" codeLink="https://github.com/Sahillrathore/astrocart-ecommerce-project" imgWidth="w-full" />
+            </div>
+            <div className="one lg:p-3 p-3 max-w-[22rem] h-fit bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
+              <ProjectCard title="SecureVault" desc="Password manager web application" stack={["React", "Tailwind", "JavaScript", "Localstorage"]} liveLink="https://manageyourpass.netlify.app" codeLink="https://github.com/Sahillrathore/password-manager" img={projImg2} imgWidth="w-full" />
             </div>
 
-            <div className="two lg:p-6 p-4 bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
+            <div className="two p-3 max-w-[22rem] h-fit bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
               <ProjectCard title="StyleSquare" desc="Online store in which products are integrated by fetching data from API's" stack={["Html", "Tailwind", "JavaScript", "React", "API"]} liveLink="https://stylesquare.netlify.app" codeLink="https://github.com/Sahillrathore/stylesquare-ecom" img={projImg3} imgWidth="w-full" />
+            </div>
+
+            <div className="two p-3 bg-white max-w-[22rem] h-fit rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
+              <ProjectCard title="Object Detector" desc="An Object Detector which can determine objects that comes in view of the camera." stack={["Html", "Tailwind", "JavaScript", "React",]} liveLink="https://objecstdetection.netlify.app" codeLink="https://github.com/Sahillrathore/objectDetector" img='17878image9.png' imgWidth="w-full" />
             </div>
           </motion.div>
 

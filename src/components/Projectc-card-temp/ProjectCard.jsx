@@ -10,14 +10,14 @@ const ProjectCard = ({ title, img, stack, liveLink, codeLink, desc, imgWidth = '
     <>
       <div className={`card-img lg:${imgWidth} h-fit w-full overflow-hidden rounded-2xl transition-transform`}>
         <a href={liveLink} target='_blank'>
-          <img src={img} alt="proimg" className=' w-full rounded-2xl hover:scale-105 transition-transform h-80' />
+          <img src={img} alt="proimg" className=' w-full rounded-2xl hover:scale-105 transition-transform h-52' />
         </a>
       </div>
 
-      <div className={`card-text flex flex-col lg:gap-3 gap-2 lg:${imgWidth} w-full mt-2 `}>
+      <div className={`card-text flex flex-col lg:gap-3 gap-2 lg:${imgWidth} w-full h-fit mt-2 `}>
         <span className='flex flex-wrap gap-2'>
           {stack?.map((item)=> (
-            <span key={item} className='tech-stack bg-purple-600 px-3 rounded-xl text-white font-light sm:text-base text-sm'>{item}</span>
+            <span key={item} className='tech-stack bg-purple-600 px-3 rounded-xl text-white font-light sm:text-sm text-sm'>{item}</span>
         ))}
         </span>
         <h2 className='card-title lg:text-3xl text-2xl text-zinc-800 font-bold '>{title}</h2>
