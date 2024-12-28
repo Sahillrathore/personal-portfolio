@@ -64,7 +64,7 @@ const About = () => {
     return (
         <>
             <TransitionEffect />
-            <div className="about-section" id='about'>
+            <div className="about-section sm:block hidden" id='about'>
                 <div className="about-elements-container pt-8 bg-gray-200 flex lg:flex-row flex-col w-full justify-around z-30 relative">
 
                     <div className='lg:w w-full flex flex-col sm:px-16 px-2'>
