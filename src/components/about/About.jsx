@@ -43,11 +43,11 @@ const About = () => {
             title: "Frontend Developer",
             text: "As a front-end developer, I specialize in crafting engaging user experiences for web applications.",
         },
-        {
-            img: "https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=",
-            title: "Web Designer",
-            text: "As a passionate web designer, I create visually stunning, user-friendly websites that captivate users and drive business growth",
-        },
+        // {
+        //     img: "https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=",
+        //     title: "Web Designer",
+        //     text: "As a passionate web designer, I create visually stunning, user-friendly websites that captivate users and drive business growth",
+        // },
     ]);
     const [images, setImages] = useState([
         {title: "React Js", img: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"},
