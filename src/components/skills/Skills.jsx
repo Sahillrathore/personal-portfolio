@@ -18,7 +18,7 @@ const Skills = () => {
       <div className="skills-elements-container py-16 px-14">
         <motion.div>
           <div className="skills-section my-4 mt-8 px-6">
-            <h1 className="text-zinc-800 md:text-5xl text-3xl font-bold mb-8">Skills</h1>
+            <h1 className="text-zinc-800 md:text-5xl text-3xl font-bold mb-8 text-center w-fit m-auto">Skills</h1>
             <div className="more-skills flex flex-wrap md:gap-12 gap-6 mt-7 text-sm">
               <FramerMotionSlider images={images} />
             </div>
