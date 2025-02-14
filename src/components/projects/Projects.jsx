@@ -40,7 +40,7 @@ const Projects = () => {
             transition={{ duration: 1 }}
             className='flex flex-col items-center'
           >
-            <h1 className='sm:text-5xl ml-6 text-4xl mt-2 mb-6 font-bold text-start w-full text-zinc-800'>What I've <span className='text-indigo-600'>Built</span></h1>
+            <h1 className='sm:text-5xl ml-6 text-4xl mt-2 mb-6 font-bold text-start text-zinc-800 w-fit -auto'>What I've <span className='text-indigo-600'>Built</span></h1>
 
             {/* <div className="first-proj-container sm:w-5/6 mx-auto w-full lg:h-96 h-full flex lg:flex-row flex-col items-center lg:gap-8 gap-2 bg-white p-8 sm:px-12 px-4 rounded-2xl border border-zinc-500  shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4"
             >
@@ -53,7 +53,7 @@ const Projects = () => {
             whileInView={{ opacity: [0, 1], y: [80, 0] }}
             transition={{ duration: 1 }}
 
-            className="second-proj-container w-full mt-4 flex flex-wrap items-center justify-start lg:gap-8 gap-4"
+            className="second-proj-container w-full mt-4 flex flex-wrap items-center justify-center lg:gap-8 gap-4"
           >
             {/* <div className="one lg:p-3 p-3 max-w-[22rem] h-fit bg-white rounded-2xl border border-zinc-500 w-full shadow-zinc-400 shadow-sm border-r-gray-800 border-r-4 border-b-gray-800 border-b-4">
               
